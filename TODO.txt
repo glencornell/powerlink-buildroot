@@ -1,0 +1,4 @@
+* we save .gitmodules but apparently can't reinit submodules out of it... weird.
+* add a hook at subproject initialisation 
+ * register to config.mk ?
+* deal with kconfig packages properly (need buildroot-side changes)

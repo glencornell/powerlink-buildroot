@@ -1,0 +1,12 @@
+config BR2_PACKAGE_POWERLINK_CN_JOYSTICK
+	bool "powerlink-cn-joystick"
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+	depends on BR2_PACKAGE_OPENPOWERLINK
+	depends on BR2_PACKAGE_OPENPOWERLINK_CN
+	select BR2_PACKAGE_LIBPCAP
+	select BR2_PACKAGE_NCURSES
+	help
+	  OpenPOWERLINK controlled node application for a USB HID Gamepad Controller.
+
+comment "powerlin-cn-joystick needs a toolchain w/ threads"
+	depends on !BR2_TOOLCHAIN_HAS_THREADS
